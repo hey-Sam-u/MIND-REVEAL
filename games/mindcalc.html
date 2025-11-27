@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mind Calculator – 1089 Trick</title>
+    <link rel="stylesheet" href="mindcalc.css" />
+  </head>
+  <body>
+    <h1 class="page-title">🧠 Mind Calculator</h1>
+    <!-- GLASS POPUP -->
+    <div id="customPopup" class="popup">
+      <p id="popupMessage"></p>
+    </div>
+
+    <div class="instructions">
+      <h2>🔍 How to Play</h2>
+      <ol>
+        <li>
+          Think of any 3-digit number (1st & last digit must differ by at least
+          2).
+        </li>
+        <li>Reverse it in your mind.</li>
+        <li>Subtract smaller from larger.</li>
+        <li>Reverse the result.</li>
+        <li>Add both results together.</li>
+        <li>Now, enter your original number below and see the magic! 🔮</li>
+      </ol>
+    </div>
+
+    <div class="calculator">
+      <input
+        type="number"
+        id="originalNumber"
+        placeholder="Enter your 3-digit number"
+        maxlength="3"
+        class="num-input"
+      />
+
+      <button id="revealBtn" class="reveal-btn">Reveal My Number 🔮</button>
+
+      <div id="animationText" class="hidden"></div>
+      <div id="finalResult" class="hidden"></div>
+
+      <button id="retryBtn" class="hidden retry-btn" onclick="resetCalc()">
+        Try Again 🔁
+      </button>
+    </div>
+
+    <audio id="magicSound" src="magicsound.wav" preload="auto"></audio>
+    <script src="mindcalc.js"></script>
+  </body>
+</html>

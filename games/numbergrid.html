@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🧠 Number Grid – Guess Your Number</title>
+  <link rel="stylesheet" href="numbergrid.css" />
+</head>
+<body>
+  <h1>🧠 Number Grid – Magic Number Guessing</h1>
+
+  <div class="instructions">
+    <h2>📖 How to Play</h2>
+    <ol>
+      <li>Think of a number between 1 and 99 (Don't tell us!)</li>
+      <li>You'll see 6 column below.</li>
+      <li>Click "YES" if your number is in the column, otherwise click "NO".</li>
+      <li>After answering all, we'll guess your number! 🔮</li>
+    </ol>
+  </div>
+
+  <div class="grid-container" id="gridContainer"></div>
+
+  <div class="controls">
+    <button onclick="answerYes()">✅ YES</button>
+    <button onclick="answerNo()">❌ NO</button>
+  </div>
+
+  <div class="result hidden" id="resultBox"></div>
+  <button id="restartBtn" class="hidden" onclick="restartGame()">🔄 Restart</button>
+
+  <audio id="magicSound" src="magicsound.wav" preload="auto"></audio>
+  <script src="numbergrid.js"></script>
+</body>
+</html>

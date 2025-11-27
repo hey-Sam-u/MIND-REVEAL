@@ -1,0 +1,94 @@
+/* numbergrid.css */
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f0f;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0 0 0;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #00e5ff;
+  }
+  
+  .instructions {
+    background-color: #1c1c1c;
+    border: 2px dashed #00c4cc;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto 20px;
+  }
+  
+  .cell {
+    background-color: #222;
+    border: 1px solid #00e5ff;
+    border-radius: 8px;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: 1rem;
+    color: #fff;
+  }
+  
+  .buttons {
+    margin-top: 10px;
+  }
+  
+  button {
+    background-color: #00e5ff;
+    border: none;
+    color: black;
+    padding: 10px 16px;
+    font-size: 1rem;
+    margin: 5px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  button:hover {
+    background-color: #00c4cc;
+  }
+  
+  #resultBox {
+    font-size: 1.8em;
+    color: #00ff8c;
+    margin-top: 20px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .grid {
+      grid-template-columns: repeat(auto-fit, minmax(40px, 1fr));
+    }
+  
+    .cell {
+      font-size: 0.9rem;
+      padding: 8px 0;
+    }
+  
+    button {
+      font-size: 0.9rem;
+      padding: 8px 14px;
+    }
+  
+    h1 {
+      font-size: 1.6em;
+    }
+  }

@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta />
+    <meta
+      name="google-site-verification"
+      content="zpwJAs-3nJB13BuakSorr6WJYrzjwnHCasmEaeNuC38"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindReveal – Magic Center</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ===== Header ===== -->
+    <header class="mr-header">
+      <div class="mr-header-left">
+        <div class="mr-badge">MIND</div>
+        <div class="mr-title-wrap">
+          <div class="mr-title">REVEAL</div>
+          <div class="mr-sub">Magic Center</div>
+        </div>
+      </div>
+      <div class="mr-header-right">
+        <button
+          class="sidebar-toggle"
+          aria-label="Toggle menu"
+          onclick="toggleSidebar()"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+
+    <!-- Sidebar -->
+    <nav class="sidebar" id="sidebar" aria-hidden="true">
+      <h2>🌟 Game Menu</h2>
+      <ul>
+        <!-- <li>
+          <a href="#mindreveal" onclick="loadGame('mindreveal')"
+            >🦉 MindReveal</a
+          >
+        </li> -->
+
+        <li>
+          <a href="#symbolgrid" onclick="loadGame('symbolgrid')"
+            >🎨 Symbolgrid</a
+          >
+        </li>
+
+        <li>
+          <a href="#numbergrid" onclick="loadGame('numbergrid')"
+            >📊 Number Grid</a
+          >
+        </li>
+        <li>
+          <a href="#cards21" onclick="loadGame('cards21')">🃏 21 Cards</a>
+        </li>
+        <li>
+          <a href="#game1089" onclick="loadGame('mindcalc')"
+            >✨ Magic Prediction</a
+          >
+        </li>
+      </ul>
+      <div class="creator-name">👨‍💻 Created by samir patil</div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="game-content" tabindex="-1">
+      <section class="welcome-box" aria-label="Welcome">
+        <h1>
+          <span class="static-left">🎩 Welcome to</span>
+          <span class="mr-typed-wrap"></span>
+        </h1>
+        <p class="lead">
+          🧠 Unlock secrets, solve logic, and experience pure magic.
+        </p>
+        <p class="blinking-text">Choose a game from the sidebar to begin!</p>
+
+        <!-- small demo input/card area (keeps page balanced) -->
+        <div class="how-to-play" aria-hidden="false">
+          <h2>How to play</h2>
+          <p>
+            Pick any game from the menu. All UI is mobile-first and touch
+            friendly.
+          </p>
+        </div>
+      </section>
+
+      <!-- placeholder for games content (existing JS will load into this) -->
+      <section id="game-area"></section>
+    </main>
+
+    <!-- Footer -->
+
+    <footer class="mr-footer" role="contentinfo">
+      <div class="mr-footer-inner">
+        <div class="mr-footer-top">
+          <div class="footer-name">© <span id="yr"></span> Samir Patil</div>
+          <p class="footer-tag">Mind games • Magic tricks • Pure logic 🔮</p>
+        </div>
+
+        <div class="mr-footer-icons">
+          <a href="#" aria-label="GitHub" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="#" aria-label="Instagram" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="#" aria-label="WhatsApp" target="_blank">
+            <i class="fa-brands fa-whatsapp"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+
+    <script src="script.js"></script>
+  </body>
+</html>

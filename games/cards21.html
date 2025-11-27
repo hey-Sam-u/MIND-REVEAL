@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>21 Cards Magic Trick</title>
+    <link rel="stylesheet" href="cards21.css" />
+  </head>
+
+  <body>
+    <h1 class="page-title">🃏 21 Cards Magic Trick</h1>
+
+    <div class="instructions">
+      <h2>📖 How to Play</h2>
+      <ol>
+        <li>Think of a card from the grid (don’t click).</li>
+        <li>Click the column number where your card is.</li>
+        <li>Repeat this 3 times.</li>
+        <li>We’ll guess your card 🔮</li>
+      </ol>
+    </div>
+
+    <div id="cardGrid" class="grid"></div>
+
+    <div class="column-buttons">
+      <p class="column-text">Which column has your card?</p>
+
+      <div class="btn-row">
+        <button onclick="chooseColumn(0)" class="col-btn">Column 1</button>
+        <button onclick="chooseColumn(1)" class="col-btn">Column 2</button>
+        <button onclick="chooseColumn(2)" class="col-btn">Column 3</button>
+      </div>
+    </div>
+
+    <div id="resultBox" class="hidden"></div>
+    <button id="restartBtn" class="hidden restart-btn" onclick="restartGame()">
+      🔄 Restart
+    </button>
+
+    <audio id="magicSound" src="magicsound.wav" preload="auto"></audio>
+  </body>
+</html>
